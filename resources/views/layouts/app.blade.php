@@ -38,10 +38,27 @@
         }
 
         /* Footer Styles */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #app {
+            flex: 1;
+        }
+
         footer {
             background-color: #343a40;
             color: #ffffff;
             padding: 20px 0;
+            margin-top: auto;
+            /* Pushes the footer to the bottom */
         }
 
         footer h5 {

@@ -41,6 +41,7 @@ class CaseStudyController extends Controller
     public function index()
     {
         $caseStudies = CaseStudy::all();
+        $caseStudies = CaseStudy::orderBy('created_at', 'desc')->get();
         return view('components.view_case_study', compact('caseStudies'));
     }
 
